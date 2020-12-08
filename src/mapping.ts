@@ -24,7 +24,6 @@ export function handleNewGravatar(event: NewGravatar): void {
   entity.count = entity.count + BigInt.fromI32(1)
 
   // Entity fields can be set based on event parameters
-  entity.id = event.params.id
   entity.owner = event.params.owner
 
   // Entities can be written to the store with `.save()`
